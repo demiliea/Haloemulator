@@ -11,3 +11,8 @@ build/
 *.gif
 *.mp4
 .DS_Store
+*.apk
+android-sdk/
+tools/flutter/
+android_app/halo_emulator_app/build/
+android_app/halo_emulator_app/.dart_tool/

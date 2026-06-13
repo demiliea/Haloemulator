@@ -15,6 +15,21 @@ Brilliant glasses run user scripts in an on-device **Lua 5.3 VM** and expose the
 - **Interactive REPL** — `halo-emulator ./app/` opens a live pygame window and Python REPL
 - **Video recording** — capture display output as GIF or MP4
 
+## Android App (APK)
+
+An Android app bridges the emulator to a phone, advertising as a Halo device over BLE:
+
+```bash
+export PATH="/workspace/tools/flutter/bin:$PATH"
+export ANDROID_HOME=/workspace/android-sdk
+cd android_app/halo_emulator_app
+flutter build apk --release
+```
+
+APK output: `android_app/halo_emulator_app/build/app/outputs/flutter-apk/app-release.apk`
+
+See [android_app/halo_emulator_app/README.md](android_app/halo_emulator_app/README.md) for details.
+
 ## Quick Start
 
 ```bash
